@@ -12,18 +12,12 @@ const clearDisplay = () => {
     display.value = ""
 }
 
-// const calculate = () => {
-//     try {
-//         display.value = eval(display.value)
-//     } catch (error) {
-//         display.value = "Error";
-//     }
-// }
-
-// const calculate = () => {
-//    display.value =  eval(display.value)
-// }
-
-function calculate(){
-    display.value = eval(display.value)
+const calculate = () => {
+    try {
+        display.value = eval(display.value)
+    } catch (error) {
+        display.value = "Error";
+    }
 }
+
+
